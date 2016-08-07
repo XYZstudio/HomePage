@@ -5,7 +5,11 @@ import './mainPage.html';
 
 Template.mainPage.onCreated(function () {
   console.log('This is Client');
+});
+
+Template.mainPage.onRendered(function () {
   $('.button-collapse').sideNav();
+  $('.parallax').parallax();
 });
 
 Template.mainPage.helpers({
